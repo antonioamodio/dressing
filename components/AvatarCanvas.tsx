@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 'use client';
 
 import { Suspense, useEffect, useMemo, useRef } from 'react';
@@ -5,7 +6,7 @@ import { Canvas, useFrame } from '@react-three/fiber';
 import { Environment, OrbitControls, useGLTF } from '@react-three/drei';
 import { Color } from 'three';
 import type { Group, Mesh, MeshStandardMaterial } from 'three';
-import { clone } from 'three/examples/jsm/utils/SkeletonUtils';
+import { clone } from 'three/examples/jsm/utils/SkeletonUtils.js';
 
 const AVATAR_URL = '/models/model-optimized.glb';
 
